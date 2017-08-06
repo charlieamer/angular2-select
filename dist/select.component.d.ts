@@ -4,7 +4,7 @@ import { SelectDropdownComponent } from './select-dropdown.component';
 import { Option } from './option';
 import { OptionList } from './option-list';
 export declare const SELECT_VALUE_ACCESSOR: ExistingProvider;
-export declare class SelectComponent<T> implements AfterViewInit, ControlValueAccessor, OnChanges, OnInit {
+export declare class SelectComponent<T = string> implements AfterViewInit, ControlValueAccessor, OnChanges, OnInit {
     options: Array<any>;
     allowClear: boolean;
     disabled: boolean;

@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
 var select_component_css_1 = require("./select.component.css");
@@ -407,83 +408,83 @@ var SelectComponent = (function () {
                 1 + this.placeholderView.length * 10 : 1 + value.length * 10;
         }
     };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Array)
+    ], SelectComponent.prototype, "options", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Boolean)
+    ], SelectComponent.prototype, "allowClear", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Boolean)
+    ], SelectComponent.prototype, "disabled", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], SelectComponent.prototype, "highlightColor", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], SelectComponent.prototype, "highlightTextColor", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Boolean)
+    ], SelectComponent.prototype, "multiple", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Number)
+    ], SelectComponent.prototype, "noFilter", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], SelectComponent.prototype, "notFoundMsg", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], SelectComponent.prototype, "placeholder", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", core_1.EventEmitter)
+    ], SelectComponent.prototype, "opened", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", core_1.EventEmitter)
+    ], SelectComponent.prototype, "closed", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", core_1.EventEmitter)
+    ], SelectComponent.prototype, "selected", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", core_1.EventEmitter)
+    ], SelectComponent.prototype, "deselected", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", core_1.EventEmitter)
+    ], SelectComponent.prototype, "noOptionsFound", void 0);
+    __decorate([
+        core_1.ViewChild('selection'),
+        __metadata("design:type", Object)
+    ], SelectComponent.prototype, "selectionSpan", void 0);
+    __decorate([
+        core_1.ViewChild('dropdown'),
+        __metadata("design:type", select_dropdown_component_1.SelectDropdownComponent)
+    ], SelectComponent.prototype, "dropdown", void 0);
+    __decorate([
+        core_1.ViewChild('filterInput'),
+        __metadata("design:type", Object)
+    ], SelectComponent.prototype, "filterInput", void 0);
+    SelectComponent = __decorate([
+        core_1.Component({
+            selector: 'ng-select',
+            template: select_component_html_1.TEMPLATE,
+            styles: [select_component_css_1.STYLE],
+            providers: [exports.SELECT_VALUE_ACCESSOR],
+            encapsulation: core_1.ViewEncapsulation.None
+        })
+    ], SelectComponent);
     return SelectComponent;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Array)
-], SelectComponent.prototype, "options", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Boolean)
-], SelectComponent.prototype, "allowClear", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Boolean)
-], SelectComponent.prototype, "disabled", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], SelectComponent.prototype, "highlightColor", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], SelectComponent.prototype, "highlightTextColor", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Boolean)
-], SelectComponent.prototype, "multiple", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Number)
-], SelectComponent.prototype, "noFilter", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], SelectComponent.prototype, "notFoundMsg", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], SelectComponent.prototype, "placeholder", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
-], SelectComponent.prototype, "opened", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
-], SelectComponent.prototype, "closed", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
-], SelectComponent.prototype, "selected", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
-], SelectComponent.prototype, "deselected", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
-], SelectComponent.prototype, "noOptionsFound", void 0);
-__decorate([
-    core_1.ViewChild('selection'),
-    __metadata("design:type", Object)
-], SelectComponent.prototype, "selectionSpan", void 0);
-__decorate([
-    core_1.ViewChild('dropdown'),
-    __metadata("design:type", select_dropdown_component_1.SelectDropdownComponent)
-], SelectComponent.prototype, "dropdown", void 0);
-__decorate([
-    core_1.ViewChild('filterInput'),
-    __metadata("design:type", Object)
-], SelectComponent.prototype, "filterInput", void 0);
-SelectComponent = __decorate([
-    core_1.Component({
-        selector: 'ng-select',
-        template: select_component_html_1.TEMPLATE,
-        styles: [select_component_css_1.STYLE],
-        providers: [exports.SELECT_VALUE_ACCESSOR],
-        encapsulation: core_1.ViewEncapsulation.None
-    })
-], SelectComponent);
 exports.SelectComponent = SelectComponent;

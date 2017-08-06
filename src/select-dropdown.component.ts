@@ -22,7 +22,7 @@ import {OptionList} from './option-list';
     encapsulation: ViewEncapsulation.None
 })
 
-export class SelectDropdownComponent<T>
+export class SelectDropdownComponent<T = string>
         implements AfterViewInit, OnChanges, OnInit {
 
     @Input() filterEnabled: boolean;

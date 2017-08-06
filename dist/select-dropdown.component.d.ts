@@ -1,7 +1,7 @@
 import { AfterViewInit, EventEmitter, OnChanges, OnInit } from '@angular/core';
 import { Option } from './option';
 import { OptionList } from './option-list';
-export declare class SelectDropdownComponent<T> implements AfterViewInit, OnChanges, OnInit {
+export declare class SelectDropdownComponent<T = string> implements AfterViewInit, OnChanges, OnInit {
     filterEnabled: boolean;
     highlightColor: string;
     highlightTextColor: string;

@@ -32,7 +32,7 @@ export const SELECT_VALUE_ACCESSOR: ExistingProvider = {
     encapsulation: ViewEncapsulation.None
 })
 
-export class SelectComponent<T>
+export class SelectComponent<T = string>
         implements AfterViewInit, ControlValueAccessor, OnChanges, OnInit {
 
     @Input() options: Array<any>;

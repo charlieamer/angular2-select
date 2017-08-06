@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var select_dropdown_component_css_1 = require("./select-dropdown.component.css");
 var select_dropdown_component_html_1 = require("./select-dropdown.component.html");
@@ -114,78 +115,78 @@ var SelectDropdownComponent = (function () {
             e.preventDefault();
         }
     };
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Boolean)
+    ], SelectDropdownComponent.prototype, "filterEnabled", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], SelectDropdownComponent.prototype, "highlightColor", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], SelectDropdownComponent.prototype, "highlightTextColor", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Number)
+    ], SelectDropdownComponent.prototype, "left", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Boolean)
+    ], SelectDropdownComponent.prototype, "multiple", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], SelectDropdownComponent.prototype, "notFoundMsg", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", option_list_1.OptionList)
+    ], SelectDropdownComponent.prototype, "optionList", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Number)
+    ], SelectDropdownComponent.prototype, "top", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Number)
+    ], SelectDropdownComponent.prototype, "width", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", Object)
+    ], SelectDropdownComponent.prototype, "close", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", Object)
+    ], SelectDropdownComponent.prototype, "optionClicked", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", Object)
+    ], SelectDropdownComponent.prototype, "singleFilterClick", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", Object)
+    ], SelectDropdownComponent.prototype, "singleFilterInput", void 0);
+    __decorate([
+        core_1.Output(),
+        __metadata("design:type", Object)
+    ], SelectDropdownComponent.prototype, "singleFilterKeydown", void 0);
+    __decorate([
+        core_1.ViewChild('filterInput'),
+        __metadata("design:type", Object)
+    ], SelectDropdownComponent.prototype, "filterInput", void 0);
+    __decorate([
+        core_1.ViewChild('optionsList'),
+        __metadata("design:type", Object)
+    ], SelectDropdownComponent.prototype, "optionsList", void 0);
+    SelectDropdownComponent = __decorate([
+        core_1.Component({
+            selector: 'select-dropdown',
+            template: select_dropdown_component_html_1.TEMPLATE,
+            styles: [select_dropdown_component_css_1.STYLE],
+            encapsulation: core_1.ViewEncapsulation.None
+        })
+    ], SelectDropdownComponent);
     return SelectDropdownComponent;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Boolean)
-], SelectDropdownComponent.prototype, "filterEnabled", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], SelectDropdownComponent.prototype, "highlightColor", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], SelectDropdownComponent.prototype, "highlightTextColor", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Number)
-], SelectDropdownComponent.prototype, "left", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Boolean)
-], SelectDropdownComponent.prototype, "multiple", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], SelectDropdownComponent.prototype, "notFoundMsg", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", option_list_1.OptionList)
-], SelectDropdownComponent.prototype, "optionList", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Number)
-], SelectDropdownComponent.prototype, "top", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Number)
-], SelectDropdownComponent.prototype, "width", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", Object)
-], SelectDropdownComponent.prototype, "close", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", Object)
-], SelectDropdownComponent.prototype, "optionClicked", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", Object)
-], SelectDropdownComponent.prototype, "singleFilterClick", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", Object)
-], SelectDropdownComponent.prototype, "singleFilterInput", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", Object)
-], SelectDropdownComponent.prototype, "singleFilterKeydown", void 0);
-__decorate([
-    core_1.ViewChild('filterInput'),
-    __metadata("design:type", Object)
-], SelectDropdownComponent.prototype, "filterInput", void 0);
-__decorate([
-    core_1.ViewChild('optionsList'),
-    __metadata("design:type", Object)
-], SelectDropdownComponent.prototype, "optionsList", void 0);
-SelectDropdownComponent = __decorate([
-    core_1.Component({
-        selector: 'select-dropdown',
-        template: select_dropdown_component_html_1.TEMPLATE,
-        styles: [select_dropdown_component_css_1.STYLE],
-        encapsulation: core_1.ViewEncapsulation.None
-    })
-], SelectDropdownComponent);
 exports.SelectDropdownComponent = SelectDropdownComponent;
